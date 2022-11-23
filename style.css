@@ -1,0 +1,158 @@
+:root {
+    --line-bg-fill: #00324d;
+    --line-hr-fill: grey;
+}
+
+[class *= 'col']{
+    padding: 1rem;
+    
+}
+
+.banner {
+    position: relative;
+    z-index: 0;
+    width: 10%;
+}
+
+hr.hcolor {
+    background-color: var(--line-hr-fill);
+} 
+
+li.li-sidebar {
+    text-align: center;
+    color: var(--line-bg-fill);
+    font-size: 16px;
+}
+
+navbar-header {
+    background-color: var(--line-bg-fill);
+    font-size: 16px;
+}
+
+li.nav-item {
+    text-align: center;
+    justify-content: space-between;
+}
+
+nav.navbar1 {
+    font-size: 16px;
+}
+
+header {
+    background-color: var(--line-bg-fill);
+}
+
+footer {
+    background-color: var(--line-bg-fill);
+}
+
+@media screen and (min-width:480px){
+    .navbar {
+        padding: 0;
+    }
+}
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    background-color: aquamarine;
+    width: 0%;
+    height: 4px;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+}
+
+@media screen and (min-width:992px) {
+    
+    .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        
+    }
+    
+    .dropdown .dropdown-menu {
+        display: none;
+        
+    }
+}
+
+.navbar-toggler {
+    border-color: aquamarine;
+}
+
+h1.sideBar {
+    background-color: var(--line-bg-fill);
+    color: aliceblue;
+    text-align: center;
+    padding: 5px;
+}
+
+hr.dotted-hl {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-top: 3px dotted #6ECA83;
+}
+
+div.row-footer {
+    color: aliceblue;
+}
+
+/* ul.list-unstyled-footer {
+
+} */
+
+.search {
+    position: relative;
+    height: 50px;
+}
+
+.search .input {
+    background-color: var(--line-bg-fill);
+    border: 0;
+    font-size: 18px;
+    padding: 15px;
+    height: 50px;
+    width: 50px;
+    transition: width 0.3s ease;
+    outline: none;
+}
+
+.btn {
+    color: #6ECA83;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    color: #6ECA83;
+}
+
+.btn:focus,
+.input:focus {
+    outline: none;
+}
+
+.search.active .input {
+    background-color: white;
+    height: 50px;
+    width: 200px;
+}
+
+.search.active .btn {
+    transform: translateX(198px);
+}
