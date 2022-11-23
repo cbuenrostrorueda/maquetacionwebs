@@ -1,5 +1,6 @@
 :root {
     --line-bg-fill: #00324d;
+    --line-green-color: var(--line-green-color);
     --line-hr-fill: grey;
 }
 
@@ -100,7 +101,7 @@ hr.dotted-hl {
     width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
-    border-top: 3px dotted #6ECA83;
+    border-top: 3px dotted var(--line-green-color);
 }
 
 div.row-footer {
@@ -128,7 +129,7 @@ div.row-footer {
 }
 
 .btn {
-    color: #6ECA83;
+    color: var(--line-green-color);
     font-size: 24px;
     position: absolute;
     top: 0;
@@ -139,7 +140,7 @@ div.row-footer {
 }
 
 .btn:hover {
-    color: #6ECA83;
+    color: var(--line-green-color);
 }
 
 .btn:focus,
